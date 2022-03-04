@@ -1,8 +1,8 @@
 "use strict";
 function isPalindrome(x) {
-    var stringNum = x.toString();
-    var left = 0;
-    var right = stringNum.length - 1;
+    const stringNum = x.toString();
+    let left = 0;
+    let right = stringNum.length - 1;
     while (left < right) {
         if (stringNum[left] !== stringNum[right])
             return false;

@@ -1,5 +1,5 @@
 "use strict";
-var romanDict = {
+const romanDict = {
     I: 1,
     V: 5,
     X: 10,
@@ -15,8 +15,8 @@ var romanDict = {
     CM: 900,
 };
 function romanToInt(s) {
-    var num = 0;
-    var left = 0;
+    let num = 0;
+    let left = 0;
     while (left < s.length - 1) {
         if (romanDict[s[left]] >= romanDict[s[left + 1]]) {
             num += romanDict[s[left]];
