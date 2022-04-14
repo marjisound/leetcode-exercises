@@ -13,9 +13,9 @@ function longestCommonPrefix(strs) {
     const max = lengthList[0];
     let maxLength = 0;
     while (maxLength <= max.length) {
-        const sub1 = max.str.substring(0, max.length - maxLength);
-        if (checkIfSubExistsInAll(lengthList, sub1))
-            return sub1;
+        const sub = max.str.substring(0, max.length - maxLength);
+        if (checkIfSubExistsInAll(lengthList, sub))
+            return sub;
         else
             maxLength++;
     }
